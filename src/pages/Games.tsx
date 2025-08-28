@@ -72,7 +72,7 @@ const Games = () => {
         {/* Header Section */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-4">
-            <span className="neon-text">Unblocked Games</span>
+            <span className="neon-text">Games</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Play your favorite games directly in your browser. No downloads, no restrictions - just pure gaming fun!

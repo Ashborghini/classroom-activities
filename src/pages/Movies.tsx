@@ -89,7 +89,7 @@ const Movies = () => {
         {/* Header Section */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-4">
-            <span className="neon-text">Unblocked Movies</span>
+            <span className="neon-text">Movies</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Stream movies and shows directly in your browser. No downloads required - just click and watch!
