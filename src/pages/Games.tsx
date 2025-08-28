@@ -126,7 +126,7 @@ const Games = () => {
             <div className="p-6">
               <h3 className="text-lg font-semibold mb-2">Want to add more games?</h3>
               <p className="text-muted-foreground">
-                We're constantly adding new unblocked games. Check back soon for more exciting titles!
+                We're constantly adding new games. Check back soon for more exciting titles!
               </p>
             </div>
           </div>
