@@ -14,7 +14,7 @@ export const Header = () => {
             <div className="absolute inset-0 h-8 w-8 text-primary animate-pulse opacity-50" />
           </div>
           <span className="neon-text text-2xl font-bold">
-            Ashbotanic Unblocked
+            Ashbotanic Lessons For Learning
           </span>
         </Link>
 
