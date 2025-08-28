@@ -11,11 +11,10 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className="relative mb-8">
             <h1 className="text-6xl font-bold mb-6">
-              <span className="neon-text">Ashbotanic Unblocked</span>
+              <span className="neon-text">Ashbotanic Lessons For Learning</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Your ultimate destination for unblocked games and movies. Play, watch, and enjoy entertainment 
-              without restrictions - all directly in your browser!
+              The ultimate destination for learning the most possible every time you use this site!
             </p>
           </div>
           
