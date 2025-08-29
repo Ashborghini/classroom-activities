@@ -10,14 +10,16 @@ const Games = () => {
   // Sample games data with Snow Rider 3D and Terraria
   const games = [
     {
+      id: "snow-rider-3d",
       title: "Snow Rider 3D",
       description: "Race down snowy mountains on your sled! Avoid obstacles, collect coins, and unlock new sleds in this thrilling 3D winter sports game.",
       category: "Racing",
       imageUrl: "/placeholder.svg?height=200&width=300",
-      gameUrl: "https://snowrider3d.com/",
-      embedUrl: "https://snowrider3d.com/"
+      gameUrl: "/games/snow-rider-3d.html",
+      embedUrl: "/games/snow-rider-3d.html"
     },
     {
+      id: "terraria",
       title: "Terraria",
       description: "Dig, fight, explore, build! The classic 2D sandbox adventure game where you can craft, build, and survive in procedurally generated worlds.",
       category: "Sandbox",
@@ -28,7 +30,7 @@ const Games = () => {
     // Placeholder slots for more games
     {
       title: "Game Slot 3",
-      description: "This slot is ready for your next favorite unblocked game. Add the game data to start playing!",
+      description: "This slot is ready for your next favorite educational game. Add the game data to start learning!",
       category: "Coming Soon",
       imageUrl: "/placeholder.svg?height=200&width=300",
       gameUrl: "",
@@ -36,7 +38,7 @@ const Games = () => {
     },
     {
       title: "Game Slot 4",
-      description: "Another available slot for popular unblocked games. Perfect for adding puzzle, action, or strategy games.",
+      description: "Another available slot for popular learning games. Perfect for adding puzzle, action, or strategy games.",
       category: "Coming Soon",
       imageUrl: "/placeholder.svg?height=200&width=300",
       gameUrl: "",
@@ -52,7 +54,7 @@ const Games = () => {
     },
     {
       title: "Game Slot 6",
-      description: "Space available for educational games, brain teasers, or any other unblocked entertainment.",
+      description: "Space available for educational games, brain teasers, or any other learning entertainment.",
       category: "Coming Soon",
       imageUrl: "/placeholder.svg?height=200&width=300",
       gameUrl: "",
@@ -72,10 +74,10 @@ const Games = () => {
         {/* Header Section */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-4">
-            <span className="neon-text">Games</span>
+            <span className="neon-text">Educational Games</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Play your favorite games directly in your browser. No downloads, no restrictions - just pure gaming fun!
+            Play your favorite games directly in your browser. No downloads, no restrictions - just pure learning fun!
           </p>
         </div>
 
@@ -107,6 +109,7 @@ const Games = () => {
               imageUrl={game.imageUrl}
               gameUrl={game.gameUrl}
               embedUrl={game.embedUrl}
+              gameId={game.id}
             />
           ))}
         </div>
@@ -126,7 +129,7 @@ const Games = () => {
             <div className="p-6">
               <h3 className="text-lg font-semibold mb-2">Want to add more games?</h3>
               <p className="text-muted-foreground">
-                We're constantly adding new games. Check back soon for more exciting titles!
+                We're constantly adding new educational games. Check back soon for more exciting titles!
               </p>
             </div>
           </div>
