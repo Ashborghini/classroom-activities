@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Play, ExternalLink } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface GameCardProps {
   title: string;
@@ -10,14 +11,16 @@ interface GameCardProps {
   imageUrl?: string;
   gameUrl?: string;
   embedUrl?: string;
+  gameId?: string;
 }
 
-export const GameCard = ({ title, description, category, imageUrl, gameUrl, embedUrl }: GameCardProps) => {
+export const GameCard = ({ title, description, category, imageUrl, gameUrl, embedUrl, gameId }: GameCardProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const navigate = useNavigate();
 
   const handlePlay = () => {
-    if (embedUrl) {
-      setIsPlaying(true);
+    if (embedUrl && gameId) {
+      navigate(`/game/${gameId}`);
     } else if (gameUrl) {
       window.open(gameUrl, '_blank');
     }
